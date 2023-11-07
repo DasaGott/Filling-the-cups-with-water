@@ -36,8 +36,6 @@ p {
   width: 150px;
   margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -53,6 +51,9 @@ p {
   cursor: pointer;
   font-size: 12px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 15px;
   transition: var(--transition);
 }
@@ -70,6 +71,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   flex: 1;
   transition: var(--transition);
 }
@@ -83,6 +85,14 @@ p {
   font-size: 12px;
 }
 
-.remained .percentage {
+.percentage {
   font-size: 25px;
+  background-color: var(--full-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 0;
+  transition: all 0.1s linear;
+  border-radius: 0 0 40px 40px;
 }
