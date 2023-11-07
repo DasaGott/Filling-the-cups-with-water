@@ -1,6 +1,7 @@
 :root {
   --empty-color: #a0e9ff60;
   --full-color: #00a9ff;
+  --transition: all 0.6s linear;
 }
 
 * {
@@ -42,6 +43,7 @@ p {
 
 .cup.full {
   background-color: var(--full-color);
+  color: #fff;
 }
 
 .cup-small {
@@ -52,5 +54,35 @@ p {
   font-size: 12px;
   text-align: center;
   margin: 15px;
-  transition: all 0.6s linear;
+  transition: var(--transition);
+}
+
+.cups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.remained {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  transition: var(--transition);
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.remained .percentage {
+  font-size: 25px;
 }
